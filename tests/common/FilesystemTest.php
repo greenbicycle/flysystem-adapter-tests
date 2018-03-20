@@ -15,7 +15,6 @@ class FilesystemTest extends \Tests\TestCase
             $this->testFilename,
             $this->sampleText
         );
-        d($this->sampleText);
         $this->assertTrue($result, "Filesystem couldn't be written to.");
     }
 
