@@ -1,6 +1,6 @@
 # Flysystem Adapter Tests
 
-I am testing a couple of different Flysystem Adapters (Main AWS S3 V3).
+I am testing a couple of different Flysystem Adapters (mainly AWS S3 V3 and local).
 
 ## TLDR;
 
