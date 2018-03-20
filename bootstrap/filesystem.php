@@ -13,32 +13,28 @@ use League\Flysystem\Adapter\Local;
 
 switch(getenv("FILESYSTEM_TYPE")) {
 
-    case 'null':
+    case 'Null':
         // The null adapter isn't very helpful for testing
         // Files can't be read.
         $adapter = new League\Flysystem\Adapter\NullAdapter;
         break;
 
-    case 'AWS_S3_V3':
+    case 'AWS_S3V3':
         $client = new S3Client([
             'credentials' => [
-                'key'    => getenv("ACCESS_KEY"),
-                'secret' => getenv("SECRET_KEY")
+                'key'    => getenv("AWS_S3V3_ACCESS_KEY"),
+                'secret' => getenv("AWS_S3V3_SECRET_KEY")
             ],
-            'region' => getenv("REGION"),
-            'version' => getenv("VERSION"),
+            'region' => getenv("AWS_S3V3_REGION"),
+            'version' => getenv("AWS_S3V3_VERSION"),
         ]);
-        $adapter = new AwsS3Adapter($client, getenv("BUCKET_NAME"));
-        break;
-    case 'memory':
-
+        $adapter = new AwsS3Adapter($client, getenv("AWS_S3V3_BUCKET_NAME"));
         break;
     case 'Local':
-    case 'local':
+    default:
         $adapter = new Local(getenv("LOCAL_PATH"));
         break;
 
-    default:
         break;
 }
 
