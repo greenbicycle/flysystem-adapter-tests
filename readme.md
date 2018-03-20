@@ -1,6 +1,6 @@
 # Flysystem Adapter Tests
 
-I am testing a couple of different Flysystem Adapters (mainly AWS S3 V3 and local).
+I am testing a couple of different [Flysystem](http://flysystem.thephpleague.com/) Adapters (mainly AWS S3 V3 and Local).
 
 ## TLDR;
 
@@ -17,6 +17,13 @@ composer update
 phpunit
 
 ```
+
+## Add a new Adapter
+
+Edit the top of bootstrap/filesystem.php and add a Use statement, similar to
+the other adapters that are mentioned there:
+
+
 
 ## Under construction
 

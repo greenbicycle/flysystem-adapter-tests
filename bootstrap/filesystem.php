@@ -1,9 +1,13 @@
 <?php
 
+use League\Flysystem\Filesystem;
+
+// AWS S3 V3
 use Aws\S3\S3Client;
 use League\Flysystem\AwsS3v3\AwsS3Adapter;
+
+// Local
 use League\Flysystem\Adapter\Local;
-use League\Flysystem\Filesystem;
 
 switch(getenv("FILESYSTEM_TYPE")) {
 
