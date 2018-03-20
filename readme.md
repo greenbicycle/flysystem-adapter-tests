@@ -17,3 +17,7 @@ composer update
 phpunit
 
 ```
+
+## Under construction
+
+I am testing AWS S3 V3, so I am mostly testing that. I will fill this out more when I have time to test others. 
