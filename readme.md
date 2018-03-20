@@ -23,7 +23,13 @@ phpunit
 Edit the top of bootstrap/filesystem.php and add a Use statement, similar to
 the other adapters that are mentioned there:
 
+```
+/ Local
+use League\Flysystem\Adapter\Local;
 
+// Additional Adapters can go here:
+use MySpecial\Flysystem\Adapter\OuterSpace
+```
 
 ## Under construction
 

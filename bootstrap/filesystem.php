@@ -9,6 +9,8 @@ use League\Flysystem\AwsS3v3\AwsS3Adapter;
 // Local
 use League\Flysystem\Adapter\Local;
 
+// Additional Adapters can go here:
+
 switch(getenv("FILESYSTEM_TYPE")) {
 
     case 'null':

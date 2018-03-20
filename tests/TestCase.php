@@ -27,7 +27,7 @@ abstract class TestCase extends BaseTestCase
         parent::setUp();
         $this->filesystem = $filesystem;
         $this->testFilename = "test.txt";
-        $this->sampleText = "You are marvelous and you are going to win.";
+        $this->sampleText = "Life is too important to be taken seriously.";
     }
 
     public function tearDown()
