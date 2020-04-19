@@ -9,6 +9,8 @@
          processIsolation="false"
          stopOnFailure="true">
     <php>
-        <env name="APP_ENV" value="testing"/>
+        <env name="APP_ENV" value="phpunit" />
+        <env name="FILESYSTEM_TYPE" value="Local" />
+        <env name="LOCAL_PATH" value="./data" />
     </php>
 </phpunit>
