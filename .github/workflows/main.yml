@@ -21,11 +21,15 @@ jobs:
     - uses: actions/checkout@v2
 
     # Runs a single command using the runners shell
+    - name: touch environment file
+      run: touch .env
+
+    # Runs a single command using the runners shell
     - name: Validate composer.json
       run: composer validate
 
-# Runs a single command using the runners shell
-    - name: Run a one-line script
+    # Runs a single command using the runners shell
+    - name: Composer install
       run: composer install
     
     - name: Run PHPUnit tests
