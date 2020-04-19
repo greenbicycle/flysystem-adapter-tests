@@ -1,5 +1,8 @@
 # Flysystem Adapter Tests
 
+![CI](https://github.com/greenbicycle/flysystem-adapter-tests/workflows/CI/badge.svg)
+
+
 I am testing a couple of different [Flysystem](http://flysystem.thephpleague.com/) Adapters (mainly AWS S3 V3 and Local).
 
 ## TLDR;
